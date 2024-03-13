@@ -1,0 +1,71 @@
+CSS : Cascading Styles Sheets
+
+CSS describes the visual style and presentation of the content written in HTML
+
+h1 {
+    color:red
+}
+Here --->
+h1 -> Is known as Selector
+{} -> Declaration Block
+color -> Property
+red -> Value
+
+Types of CSS : 
+1. Inline CSS
+
+EX: <h1 style ="color:red"> Inline CSS </h1>
+
+2. Internal CSS
+
+EX: We declare style block inside teh <head> block
+
+<head>
+<style>
+h1 {
+    color: red
+}
+</style>
+</head>
+
+3. External CSS
+
+EX: We create a separate file that contail all CSS declaration.
+styles.css
+
+##Conflict in CSS
+--> When we have multiple selector for the same element then based on the selector priority CSS handle the Conflict.
+
+Ex: <p id="conflict" class="css-conflict">CSS Conflict</p>
+
+.css-conflict {
+    font-style:italic;
+    font-size:18px;
+}
+
+#conflict {
+    font-size: 20px;
+}
+
+p {
+    font-size:22px
+    color:red
+}
+
+--> By default all CSS property will apply whether it's class,id,or element.
+--> for conflict property CSS use selector priority to resolve it.
+
+1 (higher) - Id (#) Selector, It multiple then last code applies
+
+2- Class (.) or pseudo-class (:) selector
+
+3 (lowest) - Element selector (p,div,li, etc)
+
+4- Universal selector (*)
+
+In the above code `font-size` is conflict property so final size would be selected Id(#) selector as 20px
+We can make any selector as higher priority by using !importants keyword
+
+p{
+    font-size: 22px !importants
+}
