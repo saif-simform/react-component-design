@@ -69,3 +69,58 @@ We can make any selector as higher priority by using !importants keyword
 p{
     font-size: 22px !importants
 }
+
+Padding : Invisible space around the content, inside of the element.
+
+Margin : Space outside of the element, between element.
+
+## Types of Boxes
+
+1. Inline Boxes : The inline boxes occupies space only necessary for its content.
+-> height,width property will not work for inline element.
+-> Padding and Margin are applied only horizontally (left,right)
+-> We can change inline boxes to block level boxes by using CSS property: `display:block`
+-> With CSS block to inline : display: inline
+
+Ex:  a,img,strong,em,button, etc.
+
+
+2. Block level boxes: It will take block level length(take horizontal space) and create a line break after that, which means they cann't be side by side one another.
+-> Element are formatted visually as blocks.
+-> Elements occupy 100% of parent elements width,no matter the content.
+-> Elements are stacked vertically by default, one after another.
+
+Ex: body,main,header,footer,section,nav,aside,div,h1-h6,p,ul,ol,li, etc
+
+3. Inline-Block Boxes : 
+-> Looks like inline from the outside, behave like block-level on the inside.
+-> occupies only contents space.
+-> Causes no line-breaks.
+
+CSS : display: inline-block
+
+## Positioning mode
+
+1. Normal Flow :
+-> Default Positioning
+-> Elements is "in flow"
+-> Elements are simply laid out according to their order in the HTML code.
+
+Default Positioning : position: relative
+
+2. Absolute Positioning: 
+-> It allows to position any element in the flow.
+-> Element is removed from the normmal flow:"out of flow"
+-> No impact on surrounding elements, might overlap them.
+-> We can use top,bottom,right,left to offset the element from its "relatively positioned container".
+-> To absolutely position any element the parent container should be position relative(position:relative).
+
+CSS: position: absolute
+
+## Psuedo Elements:
+-> We can declare as : h1::after{}
+-> Ex: first-child,last-child,first-line,after,before
+
+##Psuedo Class: 
+-> We can declare as : li:first-child{}
+->Ex: first-child,last-child,nth-child
