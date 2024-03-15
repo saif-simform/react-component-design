@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Basic Language of the Web:HTML</title>
+    <!-- <style>
+      h1 {
+        color: blue;
+      }
+    </style> -->
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- It is better to use only one h1 heading in a single page-->
+      <header class="main-header clearfix">
+        <h1>📘 The Code Magazine</h1>
+
+        <nav>
+          <a href="blog.html">Blog</a>
+          <!-- <a href="challenges/challenge.html">Challenges</a> -->
+          <!-- <a href="challenges/floatlayout.html">Challenges</a> -->
+          <a href="challenges/flexbox.html">Challenges</a>
+          <a href="flexbox/flexbox.html">Flexbox</a>
+          <a href="css-grid/css-grid.html">CSS Grid</a>
+        </nav>
+        <!-- to clear float we have added new empty element -->
+        <!-- <div class="clear"></div> -->
+      </header>
+      <div class="row">
+        <article>
+          <header class="post-header">
+            <h2>The Basic Language of the Web:HTML</h2>
+            <div class="author-box">
+              <img
+                src="image/laura-jones.jpg"
+                alt="profile-img"
+                height="50"
+                width="50"
+                class="author-img"
+              />
+
+              <!--<b> is just an element without any meaning which is used in old html in semantic html we use strong element-->
+              <p id="author" class="author">
+                Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+              </p>
+            </div>
+
+            <img src="image/post-img.jpg" alt="post-img" class="post-image" />
+            <!--Attribute are peaces of data that describe an element -->
+          </header>
+
+          <p>
+            All modern websites and web applications are built using three
+            <em>fundamental</em>
+            <!--Instead of <i> element we use <em>(emphasis) in semantic html-->
+            technologies: HTML, CSS and JavaScript. These are the languages of
+            the web.
+          </p>
+          <p>
+            In this post, let's focus on HTML. We will learn what HTML is all
+            about, and why you too should learn it.
+          </p>
+
+          <h3>What is HTML</h3>
+          <p>
+            HTML stands for <strong>H</strong>yperText <strong>M</strong>arkup
+            <strong>L</strong>anguage. It's a markup language that web
+            developers use to structure and describe the content of a webpage
+            (not a programming language).
+          </p>
+          <p>
+            HTML consists of elements that describe different types of content:
+            paragraphs, links, headings, images, video, etc. Web browsers
+            understand HTML and render HTML code as websites.
+          </p>
+          <p>In HTML, each element is made up of 3 parts:</p>
+
+          <ol>
+            <li>The opening tag</li>
+            <li>The closing tag</li>
+            <li>The actual element</li>
+          </ol>
+
+          <p>
+            You can learn more at the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              MDN Web Docs.
+            </a>
+          </p>
+
+          <h3>Why should you learn HTML?</h3>
+
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
+
+          <ul>
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
+
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </article>
+
+        <aside>
+          <h4>Related posts</h4>
+
+          <ul class="related">
+            <li class="related-post">
+              <img
+                src="image/related-1.jpg"
+                alt="related-1"
+                height="50"
+                width="50"
+              />
+              <div>
+                <a href="#" class="related-link">Link-1</a>
+                <p class="related-author">Related-1</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="image/related-2.jpg"
+                alt="related-2"
+                height="50"
+                width="50"
+              />
+              <div>
+                <a href="#" class="related-link">link-2</a>
+                <p class="related-author">Related-2</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="image/related-3.jpg"
+                alt="related-3"
+                height="50"
+                width="50"
+              />
+              <div>
+                <a href="#" class="related-link">link-3</a>
+                <p class="related-author">Related-3</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- &copy is an entity of semantic html-->
+      <footer>
+        <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
+      </footer>
+    </div>
+    <button>Like</button>
+  </body>
+</html>
