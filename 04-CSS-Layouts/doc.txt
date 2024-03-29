@@ -35,4 +35,11 @@ Ex:CSS : float:left, float:right
 
 3. CSS Grid:
 -> For laying out element in a fully fledged "2-dimensional grid".
--> Perfect for "page layouts" and "complex components"
+-> Perfect for "page layouts" and "complex components".
+-> The main idea behind CSS Grid is that we divide a container elementinto rows and columns that can be filled with its child elements.
+-> We can use Flexbox and Grid both in designing layout.
+-> It's recommended to always use "gap" property instead of margin in CSS Grid.
+-> In Grid we can use different "gap" value for "row" and "column" which we cann't do in Flexbox.
+
+## CSS Grid Terminology
+-> Refer grid.png file in image folder

@@ -1,0 +1,11 @@
+##Shadow
+-> Shadow is used to create 3d interfaces.
+-> It can be used on boxes and text
+-> Use small shadows for smaller elements that should stand out (to draw attention)
+Ex: Heighliting text area, button etc
+
+-> Use medium-sized shadows for larger areas that should stand out a bit more
+Ex: Card details(swipper)
+
+-> Use large shadowsfor elements that should really float above the interface
+Ex: Navigation bar, dropdown
